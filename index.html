@@ -1,93 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <title>Kang Jisoo | Portfolio</title>
-
-    <!-- 반응형 웹을 위한 설정 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- 간단한 스타일 -->
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f6f8;
-        }
-
-        header {
-            background-color: #222;
-            color: white;
-            padding: 16px;
-            text-align: center;
-        }
-
-        main {
-            padding: 20px;
-        }
-
-        section {
-            background: white;
-            padding: 16px;
-            margin-bottom: 16px;
-            border-radius: 8px;
-        }
-
-        button {
-            padding: 10px 16px;
-            border: none;
-            background-color: #4CAF50;
-            color: white;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #43a047;
-        }
-
-        footer {
-            text-align: center;
-            padding: 12px;
-            font-size: 14px;
-            color: #777;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>rkdwltn1211 | Home</title>
+  <link rel="stylesheet" href="./style.css" />
 </head>
-
 <body>
-    <!-- 상단 영역 -->
-    <header>
-        <h1>Welcome to My Website</h1>
-        <p>index.html 샘플 페이지입니다</p>
-    </header>
+  <!-- 상단(선택) -->
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="./">rkdwltn1211</a>
+      <nav class="nav">
+        <a href="#projects">Projects</a>
+      </nav>
+    </div>
+  </header>
 
-    <!-- 메인 콘텐츠 -->
-    <main>
-        <section>
-            <h2>내 프로젝트</h2>
-            <p>
-               탁송 프로젝트
-            </p>
-        </section>
+  <main>
+    <!-- 1) 첫 화면: 이름 + 소개 -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <h1 class="hero__title">홍길동</h1>
+        <p class="hero__desc">
+          안녕하세요. 저는 <b>OOO</b>에 관심이 있고, 작은 프로젝트를 꾸준히 만들고 있습니다.
+        </p>
 
-        <section>
-            <h2>버튼 예제</h2>
-            <button onclick="showMessage()">클릭하세요</button>
-        </section>
-    </main>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#projects">프로젝트 보기 ↓</a>
+          <a class="btn btn--ghost" href="https://github.com/rkdwltn1211" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
 
-    <!-- 하단 영역 -->
-    <footer>
-        © 2026 My Website
-    </footer>
+    <!-- 2) 스크롤하면 등장: Projects -->
+    <section id="projects" class="section reveal">
+      <div class="container">
+        <h2 class="section__title">Projects</h2>
+        <p class="section__sub">카드를 누르면 상세 페이지로 이동합니다.</p>
 
-    <!-- 간단한 자바스크립트 -->
-    <script>
-        function showMessage() {
-            alert("버튼이 클릭되었습니다!");
-        }
-    </script>
+        <div class="grid">
+          <a class="card" href="./projects/project-1.html">
+            <div class="card__top">
+              <span class="pill">HTML/CSS</span>
+              <span class="pill pill--soft">2026</span>
+            </div>
+            <h3 class="card__title">프로젝트 1</h3>
+            <p class="card__desc">한 줄 설명을 적어주세요.</p>
+          </a>
+
+          <a class="card" href="./projects/project-2.html">
+            <div class="card__top">
+              <span class="pill">JavaScript</span>
+              <span class="pill pill--soft">Mini</span>
+            </div>
+            <h3 class="card__title">프로젝트 2</h3>
+            <p class="card__desc">한 줄 설명을 적어주세요.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© 2026 홍길동</p>
+      <a class="to-top" href="#">맨 위로</a>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
 </body>
 </html>
