@@ -8,17 +8,24 @@
 </head>
 <body>
   <!-- 상단(선택) -->
+  <img src = "cute.jpg">
   <header class="header">
     <div class="container header__inner">
       <a class="logo" href="./">Home</a>
-      <nav class="nav">
-        <a href="#projects">Projects</a>
-      </nav>
+     <nav> 
+      <ul nav class="nav-list">
+        <li><a hrep = "#projects">Projects</a></li>
+        <li><a hrep = "#skills">Skills</a></li>
+        <li><a hrep = "#career">career</a></li>
+      </ul>
+     </nav>
     </div>
   </header>
 
   <main>
+    
     <!-- 1) 첫 화면: 이름 + 소개 -->
+    
     <section class="hero">
       <div class="container hero__inner">
         <h1 class="hero__title">Kang Jisoo</h1>
@@ -32,8 +39,9 @@
         </div>
       </div>
     </section>
-
-    <!-- 2) 스크롤하면 등장: Projects -->
+    <!--2)목록 섹션 만들기
+    
+    <!-- 3) 스크롤하면 등장: Projects -->
     <section id="projects" class="section reveal">
       <div class="container">
         <h2 class="section__title">Projects</h2>
@@ -60,6 +68,9 @@
         </div>
       </div>
     </section>
+
+   
+      
   </main>
 
   <footer class="footer">
