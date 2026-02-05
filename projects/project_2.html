@@ -1,11 +1,93 @@
 <!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <title>Project 2</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>프로젝트 1 | Kang Jisoo</title>
+  <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
-  <h1>Project 2</h1>
-  <p>두 번째 프로젝트 상세 페이지입니다.</p>
+  <!-- ✅ index랑 같은 헤더 -->
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="../index.html">← Home</a>
+
+      <!-- (선택) 햄버거 메뉴를 같이 쓰고 싶으면 동일하게 -->
+      <button class="menu-btn" id="menuBtn" aria-label="메뉴" aria-expanded="false">☰</button>
+
+      <nav class="nav" id="navMenu">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="../index.html#projects">Projects</a></li>
+          <li><a class="nav-link" href="../index.html#skills">Skills</a></li>
+          <li><a class="nav-link" href="../index.html#career">Career</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ✅ index랑 비슷한 느낌의 상단 소개 -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <p class="pill pill--soft" style="width:fit-content;">HTML/CSS · Team</p>
+        <h1 class="hero__title" style="font-size:40px;">DevTools 기반 악성코드 탐지</h1>
+        <p class="hero__desc">
+          (프로젝트 배경/목표를 2~3줄로 적어줘)
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#" target="_blank" rel="noopener">Live Demo</a>
+          <a class="btn btn--ghost" href="#" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ✅ 카드 레이아웃 재사용 -->
+    <section class="section">
+      <div class="container">
+        <div class="grid" style="grid-template-columns: 1fr; gap: 12px;">
+          <div class="card">
+            <h2 class="card__title">프로젝트 개요</h2>
+            <p class="card__desc">
+              어떤 문제를 해결하려고 만들었는지, 사용자가 얻는 이점이 뭔지 적어줘.
+            </p>
+          </div>
+
+          <div class="card">
+            <h2 class="card__title">주요 기능</h2>
+            <ul style="margin:0; padding-left:18px; color: rgba(255,255,255,.78);">
+              <li>기능 1: 예) 매칭 요청 등록</li>
+              <li>기능 2: 예) 조건 기반 자동 매칭</li>
+              <li>기능 3: 예) 매칭 상태/히스토리 조회</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h2 class="card__title">기술 스택</h2>
+            <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:10px;">
+              <span class="pill">HTML</span>
+              <span class="pill">CSS</span>
+              <span class="pill">JavaScript</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h2 class="card__title">스크린샷</h2>
+            <p class="card__desc">이미지를 넣고 싶으면 아래처럼!</p>
+
+            <!-- 이미지 넣기: 파일이 projects 폴더 안에 있으면 ./  -->
+            <!-- <img src="./project1.png" alt="프로젝트 화면" style="width:100%; border-radius:14px; border:1px solid var(--line);"> -->
+          </div>
+        </div>
+
+        <div style="height:16px;"></div>
+        <a class="btn btn--ghost" href="../index.html#projects">← Projects로 돌아가기</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ✅ index랑 같은 스크립트 쓰고 싶으면 경로 주의 -->
+  <script src="../script.js"></script>
 </body>
 </html>
+
