@@ -35,11 +35,10 @@ a{color:inherit;text-decoration:none}
 .nav a{color:var(--muted); padding:8px 10px; border-radius:12px;}
 .nav a:hover{background:var(--panel); color:var(--text);}
 
-h1{color: pink;}
 
 .hero{padding:70px 0 50px;}
 .hero__inner{display:grid; gap:14px;}
-.hero__title{margin:0; font-size: clamp(42px, 6vw, 72px); letter-spacing:-.5px; }
+.hero__title{margin:0; font-size: clamp(42px, 6vw, 72px); letter-spacing:-.5px; color: #00ffc6; }
 .hero__desc{margin:0; color:var(--muted); max-width:60ch; font-size:18px;}
 .hero__cta{display:flex; gap:10px; flex-wrap:wrap; margin-top:6px;}
 
